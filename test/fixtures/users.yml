@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idU: 1
+  name: MyString
+  login: MyString
+  password: MyString
+  cash: 1
+  spend_cash: 1
+
+two:
+  idU: 1
+  name: MyString
+  login: MyString
+  password: MyString
+  cash: 1
+  spend_cash: 1

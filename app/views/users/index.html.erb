@@ -1,0 +1,25 @@
+<h1 class="text text-center">Users</h1>
+<br />
+  <%= link_to '<- Goods', goods_path %>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">LogIn</th>
+      <th scope="col">Cash</th>
+      <th scope="col">Spent_cash</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |obj| %>
+      <tr>
+        <th scope="row"><%= obj.idU %></th>
+        <td><%= obj.name %></td>
+        <td><%= obj.login %></td>
+        <td><%= obj.cash %></td>
+        <td><%= obj.spend_cash %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,26 @@
+<h1 class="text text-center">New good</h1>
+<%= form_for @good do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, autofocus: true, style: "width:200px" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price, type: 'number', style: "width:100px" %>&nbsp;UAH
+  </div>
+
+  <div class="field">
+    <%= f.label :count %><br />
+    <%= f.text_field :count, type: 'number', style: "width:100px" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :code %><br />
+    <%= f.text_field :code, style: "width:200px" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Create", class: "btn btn-primary", style: "margin: 5px" %>
+  </div>
+<% end %>

@@ -1,0 +1,22 @@
+<h1 class="text text-center">Edit  good</h1>
+<%= form_for(@good, url: goods_refresh_path) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, autofocus: true, style: "width:200px" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price, type: 'number', style: "width:100px" %>&nbsp;UAH
+  </div>
+
+  <div class="field">
+    <%= f.label :count %><br />
+    <%= f.text_field :count, type: 'number', style: "width:100px" %>
+  </div>
+  <%= f.hidden_field :idG, value: params[:idG] %>
+
+  <div class="actions">
+    <%= f.submit "Update", class: "btn btn-primary", style: "margin: 5px" %>
+  </div>
+<% end %>
